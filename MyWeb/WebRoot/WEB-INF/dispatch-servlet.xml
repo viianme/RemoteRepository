@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+
+	xsi:schemaLocation="  
+            http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-4.2.xsd  
+            http://www.springframework.org/schema/mvc  
+            http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd"
+	default-autowire="byName">
+
+
+		<mvc:annotation-driven/>
+	<!-- 啟動聲明式 @Transactional 注解 ，當函式有@Transactional 注解時，則啟動資料庫交易(commit or 
+		rollback ) -->
+	
+<!-- 	<tx:annotation-driven transaction-manager="springTransactionManager" /> -->
+	
+	<!-- 啟動Spring MVC的註解功能 -->
+<!-- 	<mvc:annotation-driven -->
+<!-- 		content-negotiation-manager="contentNegotiationManager"  conversion-service="conversionService" /> -->
+<!-- 	<bean id="contentNegotiationManager" -->
+<!-- 		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean"> -->
+<!-- 		<property name="favorPathExtension" value="false" /> -->
+<!-- 	</bean> -->
+
+
+
+</beans>
