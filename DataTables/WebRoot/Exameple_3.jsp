@@ -18,7 +18,7 @@
 	$(document).ready(function(){
 		//Ajax sourced data
 		 $('#example').DataTable( {
-			    "ajax": '/DataTables/resource/ajax/data/arrays.txt'
+			    "ajax": '/DataTables/resource/ajax/data/arrays.txt',
 		        "columns":[
 		        	{title : "Name"},
 		        	{title : "Position"},
